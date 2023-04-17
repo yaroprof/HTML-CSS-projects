@@ -1,7 +1,13 @@
 /* global styles */
-body {
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body a{
+  color: #333;
 }
 
 /* header styles */
@@ -148,10 +154,17 @@ nav a:hover {
 
 /* Dark mode */
 body.dark-mode {
-  background-color: #232222;
+  background-color: #333;
   color: #fff;
 }
 
+body.dark-mode a {
+  color: #fff;
+}
+
+body.dark-mode p {
+  color: #fff;
+}
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
