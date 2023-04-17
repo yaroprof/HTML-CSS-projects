@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #fff;
+  /* background-color: #fff; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -85,6 +85,20 @@ nav a:hover {
   transform: rotate(-45deg) translate(6px, -5px);
 }
 
+/* Light togle button */
+.btn-dark {
+  color: #fff;
+  cursor: pointer;
+  background-color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-dark:hover {
+  background-color: #555;
+}
+
 /* Main section styles */
 
 .main {
@@ -130,6 +144,12 @@ nav a:hover {
   border: none;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #232222;
+  color: #fff;
 }
 
 /* Media Queries */
