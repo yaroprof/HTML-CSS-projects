@@ -1,13 +1,9 @@
 /* global styles */
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body a{
-  color: #333;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* header styles */
@@ -15,9 +11,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 20px 40px;
-  /* background-color: #fff; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 nav ul {
@@ -47,6 +48,11 @@ nav a:hover {
   color: #ff6a00;
 }
 
+/* add this rule for dark mode */
+body.dark-mode nav a {
+  color: #fff;
+}
+
 .logo img {
   width: 100px;
   height: auto;
@@ -57,7 +63,6 @@ nav a:hover {
   color: #000;
   padding: 10px 20px;
   border-radius: 5px;
-  /* margin-top: 10px; */
 }
 
 .cart:hover {
@@ -88,7 +93,7 @@ nav a:hover {
 }
 
 .burger-menu.active .line:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Light togle button */
@@ -101,6 +106,7 @@ nav a:hover {
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
+
 .btn-dark:hover {
   background-color: #555;
 }
@@ -114,9 +120,13 @@ nav a:hover {
   justify-content: center;
 }
 
+/* .container{
+  margin: 35px 0;
+} */
+
 .product {
   text-align: center;
-  margin: 20px;
+  margin: 50px 20px 0;
   padding: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -135,7 +145,6 @@ nav a:hover {
 }
 
 .product p {
-  font-size: 14px;
   color: #666;
   margin-top: 10px;
 }
@@ -154,16 +163,26 @@ nav a:hover {
 
 /* Dark mode */
 body.dark-mode {
+  transition: all 0.5s ease-in-out;
   background-color: #333;
   color: #fff;
 }
 
-body.dark-mode a {
+body.dark-mode h3, nav{
   color: #fff;
 }
 
 body.dark-mode p {
   color: #fff;
+}
+
+body.dark-mode .btn-dark{
+  background-color: #fff;
+  color: #333;
+}
+
+body.dark-mode .burger-menu .line{
+  background-color: #fff;
 }
 /* Media Queries */
 
