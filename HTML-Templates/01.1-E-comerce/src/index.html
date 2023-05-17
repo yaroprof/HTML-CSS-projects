@@ -1,74 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>e-commerce</title>
-  <link rel="stylesheet" href="../dist/output.css">
-</head>
-<body>
-  <!-- Header -->
-  <header class="bg-gray-800">
-    <div class="container mx-auto py-4 px-8 flex items-center justify-between">
-      <div class="flex items-center">
-        <a href="#" class="text-xl font-bold text-white">Logo</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="sticky top-0 bg-gray-800">
+      <div class="container mx-auto py-4 px-8 flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="#" class="text-xl font-bold text-white">Logo</a>
+        </div>
+
+        <nav class="hidden md:block flex-grow">
+          <ul class="flex space-x-4">
+            <li><a href="#" class="text-white hover:text-gray-300">Home</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">About</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Services</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="md:hidden">
+          <button class="text-white focus:outline-none">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M4 6H20M4 12H20M4 18H20"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-      
-      <nav class="hidden md:block">
-        <ul class="flex space-x-4">
-          <li><a href="#" class="text-white hover:text-gray-300">Home</a></li>
-          <li><a href="#" class="text-white hover:text-gray-300">About</a></li>
-          <li><a href="#" class="text-white hover:text-gray-300">Services</a></li>
-          <li><a href="#" class="text-white hover:text-gray-300">Contact</a></li>
+
+      <!-- Responsive Mobile Menu -->
+      <div class="hidden md:hidden">
+        <ul class="bg-gray-700 py-2">
+          <li><a href="#" class="block text-white px-4 py-2 hover:bg-gray-600">Home</a></li>
+          <li><a href="#" class="block text-white px-4 py-2 hover:bg-gray-600">About</a></li>
+          <li><a href="#" class="block text-white px-4 py-2 hover:bg-gray-600">Services</a></li>
+          <li><a href="#" class="block text-white px-4 py-2 hover:bg-gray-600">Contact</a></li>
         </ul>
-      </nav>
-      
-      <div class="md:hidden">
-        <button class="text-white focus:outline-none">
-          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-            <path
-              d="M4 6H20M4 12H20M4 18H20"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
       </div>
-    </div>
-    
-    <!-- Responsive Mobile Menu -->
-    <div class="hidden md:hidden">
-      <ul class="bg-gray-700 py-2">
-        <li><a href="#" class="block text-white px-4 py-2 hover:bg-gray-600">Home</a></li>
-        <li><a href="#" class="block text-white px-4 py-2 hover:bg-gray-600">About</a></li>
-        <li><a href="#" class="block text-white px-4 py-2 hover:bg-gray-600">Services</a></li>
-        <li><a href="#" class="block text-white px-4 py-2 hover:bg-gray-600">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+    </header>
 
-
-
-<!-- Hero -->
-<section class="bg-gray-100 py-12">
-  <div class="container mx-auto flex flex-col lg:flex-row">
-    <div class="lg:w-1/2">
-      <div class="px-6">
-        <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to our Website</h1>
-        <p class="text-lg text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit,
-          tellus eu congue venenatis, nunc risus tincidunt est, sed pellentesque elit ante eu nulla.</p>
-        <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Learn More</button>
+    <!-- Hero -->
+    <section class="container mx-auto py-4 px-8 flex items-center justify-between">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap items-center product-row">
+          <div class="w-full lg:w-1/2">
+            <div class="section-body">
+              <h3 class="text-3xl font-bold mb-2">INTRODUCING</h3>
+              <h3 class="text-4xl font-bold mb-4">PORTO HEADPHONE</h3>
+              <div class="flex items-center mb-4">
+                <span class="text-primary font-bold text-xl">$350.00</span>
+                <a
+                  href="#"
+                  class="ml-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+                  >add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <figure class="large-img">
+              <img
+                class="object-cover w-full h-full"
+                src="./images/1.png"
+                alt="banner"
+                width="939"
+                height="1120"
+              />
+            </figure>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="lg:w-1/2">
-      <img class="object-cover w-full h-full" src="./images/1.png" alt="Image">
+    </section>
+
+    <!-- Banner section -->
+
+    <section style="background-color: #ededed" class="container w-full">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap items-center product-row">
+          <!-- Left Side -->
+          <div class="w-full lg:w-1/2">
+            <figure class="large-img">
+              <img
+                class="object-cover w-full h-full"
+                src="./images/2.jpg"
+                alt="banner"
+                width="939"
+                height="1120"
+              />
+            </figure>
+          </div>
+          <!-- Right Side -->
+          <div class="w-full lg:w-1/2">
+            <div class="section-body">
+              <h3 class="text-3xl font-bold mb-2">INTRODUCING</h3>
+              <h3 class="text-4xl font-bold mb-4">PORTO HEADPHONE</h3>
+              <div class="flex items-center mb-4">
+                <span class="text-primary font-bold text-xl">$350.00</span>
+                <a
+                  href="#"
+                  class="ml-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+                  >add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section style="background-color: #ededed;" class="py-8 section-2 with-bg" id="feature">
+  <div class="container mx-auto">
+    <div class="flex flex-col lg:flex-row">
+      <div class="lg:w-1/2">
+        <img src="images/2.jpg" alt="Image" class="w-full" />
+      </div>
+      <div class="lg:w-1/2 lg:pl-8 mt-8 lg:mt-0">
+        <div class="pl-12 lg:pl-0">
+
+          <h2 class="text-3xl font-bold mb-4">Title</h2>
+          <p class="text-lg mb-4">Text paragraph goes here.</p>
+          <button class="bg-blue-500 text-white py-2 px-4 rounded">Button</button>
+        </div>
+      </div>
     </div>
   </div>
-</section>
-
-
-</body>
+</section> -->
+  </body>
 </html>
